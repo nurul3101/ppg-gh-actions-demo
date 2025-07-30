@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "start": "tsx src/index.ts",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "queries": "tsx ./src/queries.ts"
   },
   "devDependencies": {
     "@types/node": "22.15.32",
