@@ -1,1 +1,1 @@
-# Prisma Postgres GitHub Actions Demo.
+# Prisma Postgres GitHub Actions Demo
