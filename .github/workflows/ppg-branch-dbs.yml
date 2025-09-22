@@ -56,7 +56,7 @@ jobs:
 
       - name: Create Database
         id: create-db
-        uses: prisma/create-prisma-postgres-database-action@latest
+        uses: prisma/create-prisma-postgres-database-action@v1.0.1
         with:
           service_token: ${{ env.PRISMA_POSTGRES_SERVICE_TOKEN }}
           project_id: ${{ env.PRISMA_PROJECT_ID }}
@@ -117,7 +117,7 @@ jobs:
 
       - name: Delete Database
         id: delete-db
-        uses: prisma/delete-prisma-postgres-database-action@latest
+        uses: prisma/delete-prisma-postgres-database-action@v1.0.2
         with:
           service_token: ${{ env.PRISMA_POSTGRES_SERVICE_TOKEN }}
           project_id: ${{ env.PRISMA_PROJECT_ID }}
