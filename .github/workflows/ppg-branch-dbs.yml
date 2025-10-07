@@ -56,12 +56,11 @@ jobs:
 
       - name: Create Database
         id: create-db
-        uses: prisma/create-prisma-postgres-database-action@v1.0.1
+        uses: prisma/create-prisma-postgres-database-action@v1.0.2
         with:
           service_token: ${{ env.PRISMA_POSTGRES_SERVICE_TOKEN }}
           project_id: ${{ env.PRISMA_PROJECT_ID }}
           database_name: ${{ env.DB_NAME }}
-          region: us-east-1
 
       - name: Setup Database Schema and Seed
         env:
